@@ -22,7 +22,7 @@ export function Layout() {
 				<NavLink to="/cart" className={({ isActive }) => cn(styles['link'], {
 					[styles.active]: isActive
 				})} >
-					<img src="public/cart-icon.svg" alt="Icon exit" />
+					<img src="/cart-icon.svg" alt="Icon exit" />
 					Cart
 				</NavLink>
 			</div>

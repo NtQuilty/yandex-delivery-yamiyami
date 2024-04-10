@@ -30,7 +30,6 @@ export function Menu() {
 
 	useEffect(() => {
 		getMenu();
-		console.log('e');
 	}, []);
 
 	return <>
@@ -45,3 +44,5 @@ export function Menu() {
 		</div>
 	</>;
 }
+
+export default Menu;

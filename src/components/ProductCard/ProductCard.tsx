@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import styles from './ProductCard.module.css';
 import { ProductCardProps } from './ProductCard.props';
+import { FC } from 'react';
 
-export default function ProductCard(props: ProductCardProps) {
+export const ProductCard: FC<ProductCardProps> = (props) => {
 	return (
 		<Link to={`/product/${props.id}`} className={styles['link']}>
 			<div className={styles['card']} >
@@ -26,4 +27,5 @@ export default function ProductCard(props: ProductCardProps) {
 			</div>
 		</Link>
 	);
-}
+};
+
